@@ -1,0 +1,165 @@
+    /* popular dishes section */
+   
+    .popular-dishes-section{
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-color: rgb(240, 240, 241);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('../logos/popular-dish-top-right.png')no-repeat right top, url('../logos/popular-dish-bottom-left.png')no-repeat left bottom rgb(240, 240, 241);
+    }
+    .popular-dish-flex{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    .umberlla-sign-flex{
+      display: flex;
+      gap: 3px;
+    }
+    .popular-dish-content{
+      text-align: center;
+      max-width: 60%;
+    }
+    .popular-dish-boxes-flex{
+      width: 100%;
+      margin-top: 20px;
+      /* display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px; */
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      place-content: center;
+      place-items: center;
+      margin-bottom: 20px;
+      gap: 20px;
+      /* flex-wrap: wrap; */
+    }
+    .popular-box1{
+      display: flex;
+      padding: 40px 15px 40px 15px;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      background-color: white;
+      min-width: 197px;
+      max-width: 355px;
+    }
+    .popular-box2{
+      display: flex;
+      padding: 40px 15px 40px 15px;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      background-color: white;
+      min-width: 197px;
+      max-width: 355px;
+    }
+    .popular-box3{
+      display: flex;
+      padding: 40px 15px 40px 15px; 
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      background-color: white;
+      min-width: 197px;
+      max-width: 355px;
+    }
+    .popular-dish-image{
+      width: 100%;
+    }
+    
+
+    .popular-dish-image img{
+      width: 100%;
+    }
+
+    .popular-dish-pagination{
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 25px;
+    }
+
+
+
+    @media only screen and (max-width:990px){
+      .popular-box3{
+        display: none;
+      }
+
+      .popular-dish-content{
+        text-align: justify;
+        max-width: 80%;
+      }
+      .popular-dish-boxes-flex{
+        grid-template-columns: 1fr 1fr;
+      }
+      .popular-dishes-section{
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+      
+    }
+
+
+    @media only screen and (max-width:760px){
+      .popular-dishes-section{
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .popular-dish-content{
+        text-align: justify;
+        max-width: 100%;
+      }
+      .popular-dish-boxes-flex{
+        grid-template-columns: 1fr;
+      }
+
+      .popular-dish-title{
+        font-size: 28px;
+      }
+
+      .popular-box3{
+        display: flex;
+      }
+      .popular-dishes-section{
+       background-image: none; 
+      }
+
+    }
+
+
+
+    @media only screen and (max-width:480px){
+      .popular-dishes-section{
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+
+      .popular-dish-title{
+        font-size: 28px;
+      }
+      .popular-dish-content{
+        text-align: justify;
+        max-width: 100%;
+      }
+
+      .popular-box3{
+        display: flex;
+      }
+
+      .popular-dish-boxes-flex{
+        grid-template-columns: 1fr;
+      }
+    }

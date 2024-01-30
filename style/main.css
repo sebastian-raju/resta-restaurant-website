@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  /* -webkit-font-smoothing: antialiased; */
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 24px;
+}
+
+.center-align{
+  width: 75%;
+  margin: auto;
+}
+
+.orange-color{
+  color: rgb(229, 76, 42);
+  display: inline;
+}
+
+.fw-600{
+  font-weight: 600;
+}
+
+.fw-700{
+  font-weight: 700;
+}
+
+.font-greatvibes30px{
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+  color: rgb(83, 83, 83);
+}
+
+.font-greatvibes36px{
+  font-family: 'Great Vibes', cursive;
+  font-size: 36px;
+  color: rgb(84, 84, 84);
+}
+
+.font-lato14px{
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: rgb(117, 117, 117);
+  line-height: 24px;
+}
+
+.font-raleway20px{
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(84, 84, 84);
+  font-weight: 700;
+}
+.font-raleway18px{
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(84, 84, 84);
+  font-weight: 700;
+}
+
+.font-raleway14px{
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(84, 84, 84);
+  font-weight: 600;
+}
+
+.font-lato22px{
+  font-size: 22px;
+  font-family: 'Lato', sans-serif;
+  color: rgb(229, 76, 42);
+  font-weight: 700;
+}
+
+.font-lato24px{
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  color: rgb(229, 76, 42);
+  font-weight: 700;
+}
+.focus-no{
+  font-size: 24px;
+  color: rgb(229, 76, 42);
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.outoffocus-no{
+  font-size: 16px;
+  color: rgb(84, 84, 84);
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.fixed-element{
+  display: grid;
+  place-content: center;
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  bottom: 50px;
+  right: 55px;
+  transform: rotate(45deg);
+  background-color: rgb(229, 76, 42);
+  z-index: 20;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.fixed-element i {
+  transform: rotate(-45deg);
+}
+
+
+@media only screen and (max-width:400px){
+  .center-align{
+    width: 85%;
+  }
+}

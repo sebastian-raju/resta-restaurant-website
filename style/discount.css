@@ -1,0 +1,97 @@
+    /* Our Discounts */
+
+    .discount-section{
+      padding-top: 50px;
+      padding-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .discount-flex{
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background:url('../logos/vegetablesoup.png') no-repeat left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .discount-content{
+      text-align: center;
+      width: 60%;
+    }
+
+    .discount-amount{
+      font-family: 'Great Vibes', cursive;
+      font-size: 36px;
+      color: rgb(84, 84, 84);
+    }
+
+    .discount-title{
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      font-size: 30px;
+      color: rgb(83, 83, 83);
+    }
+
+    .order-now-btn{
+      margin-top: 20px;
+      padding: 13px 38px;
+      background-color: rgb(229, 76, 42);
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      border: none;
+      color: white;
+    }
+
+    @media only screen and (max-width:990px){
+      .discount-section{
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+      .discount-content{
+        text-align: justify;
+        width: 80%;    
+      }
+    }
+    
+    @media only screen and (max-width:760px){
+      .discount-section{
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .discount-amount{
+        font-size: 28px;
+      }
+      .discount-title{
+        font-size: 20px;
+      }
+      .discount-content{
+        text-align: justify;
+        width: 100%;    
+      }
+      .discount-flex{
+        background-image: none;
+      }
+    }
+    
+    @media only screen and (max-width:480px){
+      .discount-section{
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .discount-amount{
+        font-size: 28px;
+      }
+      .discount-title{
+        font-size: 20px;
+      }
+      .discount-content{
+        text-align: justify;
+        width: 100%;    
+      }
+    }

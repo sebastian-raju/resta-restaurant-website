@@ -1,0 +1,89 @@
+    /* header */
+    .header{
+      height: 115px;
+      width: 100%;
+      background-color: white;
+      position: sticky;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0px 0.0125px 8px rgba(0, 0, 0, 0.15);
+      z-index: 10;      
+    }
+
+    .header-flex{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .logo-section{
+      height: 115px;
+    }
+    .logo-section img{
+      height: 137px;
+    }
+
+    .options-section{
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: rgb(83, 83, 83);
+    }
+
+    .hamburger-menu{
+      display: none;
+    }
+
+
+    @media only screen and (max-width:1150px){
+      .options-section{
+        font-size: 11px;
+        gap: 15px;
+      }
+    } 
+
+    @media only screen and (max-width:900px){
+      .options-section{
+        display: none;
+      }
+      .search-section{
+        display: none;
+      }
+
+      .hamburger-menu{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+      }
+    } 
+
+    @media only screen and (max-width:760px){
+      .header{
+        height: 84px;
+      }
+      .header-flex{
+        display: flex;
+        height: 84px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .logo-section img{
+        width: 120px;
+        height: 100px;
+        margin-top: 16px;
+      }
+    }

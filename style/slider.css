@@ -1,0 +1,102 @@
+     /* slider section */
+
+     .slider-section{
+      background-image: url('../images/slider.jpg');
+      background-position: 50% 50%;
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat; 
+      /* height: 650px; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 180px;
+      padding-bottom: 180px;
+    }
+
+    .slider-title{
+      font-family: 'Great Vibes', cursive;
+      font-size: 36px;
+      color: rgb(84, 84, 84);
+    }
+    .slider-content{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .slider-caption{
+      font-family: 'Raleway', sans-serif;
+      font-size: 50px;
+      font-weight: 700;
+    }
+
+    .order-now{
+      margin-top: 20px;
+      padding: 13px 35px;
+      background-color: rgb(229, 76, 42);
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      border: none;
+      color: white;
+    }
+
+    
+    @media only screen and (max-width:990px){
+      .slider-section{
+        padding-top: 150px;
+        padding-bottom: 150px;
+      }
+      .slider-title, .slider-caption{
+        font-size: 30px;
+      }
+      .slider-description {
+        font-size: 13px;
+      }
+      .slider-content{
+        gap: 10px;
+      }
+    
+    }
+
+    @media only screen and (max-width:760px){
+      .slider-section{
+        padding-top: 120px;
+        padding-bottom: 120px;
+      }
+      .slider-caption{
+        font-size: 20px;
+      }
+      
+      .slider-description{
+        display: none;
+      }
+
+      .order-now{
+        margin-top: 10px;
+        font-size: 13px;
+        padding: 7px 15px;
+      }
+      .slider-content{
+        gap: 8px;
+      }
+    }
+
+    @media only screen and (max-width:480px){
+      .slider-section{
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+
+      .slider-title{
+        font-size: 24px;
+      }
+      .slider-content{
+        gap: 5px;
+      }
+
+    }

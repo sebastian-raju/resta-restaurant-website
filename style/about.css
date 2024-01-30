@@ -1,0 +1,104 @@
+    /* About section  */
+
+    .about-section{
+      padding-top: 100px;
+      padding-bottom: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .about-flex{
+      /* display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-content: center;
+      place-items: center;
+      gap: 30px;
+    }
+    .about-title{
+      font-size: 36px;
+      font-family: 'Great Vibes', cursive;
+      color: rgb(84, 84, 84);
+    }
+    
+    .about-subtitle{
+      font-size: 16px;
+      font-family: 'Raleway', sans-serif;
+      color: rgb(85, 85, 85);
+      font-weight: 600;
+      text-align: justify;
+    }
+    .about-description{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .about-image{
+      flex: 1;
+    }
+
+    .about-image img{
+      width: 100%;
+    }
+
+    .about-readmore{
+      padding: 16px 38px;
+      background-color: rgb(229, 76, 42);
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      border: none;
+      color: white;
+      align-self:flex-start;
+      margin-top: 10px;
+    }
+    .about-content1{
+      text-align: justify;
+    }
+    .about-content2{
+      text-align: justify;
+    }
+
+
+
+    @media only screen and (max-width:990px){
+      .about-section{
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+      .about-content2{
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width:760px){
+      .about-section{
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .about-flex{
+        grid-template-columns: 1fr;
+      }
+
+      .about-title{
+        font-size: 30px;
+      }
+      .about-readmore{
+        padding: 7px 24px;
+        font-size: 14px;
+        align-self:center;
+        margin-top: 20px;
+      }
+    }
+
+    @media only screen and (max-width:480px){
+      .about-section{
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+    }

@@ -1,0 +1,111 @@
+    /* Our Gallery */
+
+    .gallery-section{
+      padding-top: 100px;
+      padding-bottom: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('../logos/gallery-top-left.png') top left no-repeat, url('../logos/gallery-bottom-right.png')bottom right no-repeat rgb(240, 240, 241);
+    }
+
+    .gallery-flex{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .gallery-title{
+      font-family: 'Great Vibes', cursive;
+      font-size: 36px;
+      color: rgb(84, 84, 84);
+    }
+    .gallery-content{
+      text-align: center;
+      width: 60%;
+    }
+
+    .gallery-options-title{
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 30px;
+      row-gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .gallery-option, .gallery-option1{
+      font-weight: 600;
+    }
+
+    .gallery-option1{
+      font-family: 'Lato', sans-serif;
+      color: rgb(235, 87, 7);
+      font-size: 14px;
+    }
+    .gallery-option{
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      color: rgb(83, 83, 83);
+      /* line-height: 24px; */
+    }
+
+    .gallery-images-section{
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+
+    .gallery-image{
+      width: 100%;
+    }
+
+    .gallery-image img{
+      display: block;
+      width: 100%;
+    }
+
+
+    @media only screen and (max-width:990px){
+      .gallery-section{
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+      .gallery-images-section{
+        grid-template-columns: 1fr 1fr;
+      }
+      .gallery-content{
+        text-align: justify;
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width:760px){
+      .gallery-section{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-image: none;
+      }
+      .gallery-images-section{
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+      }
+      .gallery-title{
+        font-size: 28px;
+      }
+    }
+
+    @media only screen and (max-width:480px){
+      .gallery-section{
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .gallery-title{
+        font-size: 28px;
+      }
+    }
